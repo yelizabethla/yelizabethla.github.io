@@ -33,7 +33,7 @@ function Thrifted() {
       <div className="container flex-col w-full mx-auto">
         <h1>THRIFT FINDS</h1>
         <div className="w-full max-w-[96rem] px-8">
-          <em className="text-left px-8">Just a few favorites I've thrifted over the years :)</em>
+          <em className="text-left sm:px-8">Just a few favorites I've thrifted over the years :)</em>
           <div className="flex flex-wrap justify-center p-4 mx-auto mb-12">
             <ThriftTiles/>
           </div>

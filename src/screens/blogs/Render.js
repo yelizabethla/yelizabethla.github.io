@@ -12,7 +12,7 @@ function Render() {
 
   return (
     <div className="App">
-      <Hero src='/assets/portfolio/Render_cover.webp' alt={'Render Cover'} height={300} />
+      <Hero src='/assets/portfolio/render_cover.webp' alt={'Render Cover'} height={300} />
       <div className="container">
         <div className="w-full pl-4 pr-4">
           <BlogPageSections blog={data.blog}/>
