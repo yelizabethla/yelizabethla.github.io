@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ellie-website/static/css/main.21a5437f.css",
+    "main.js": "/ellie-website/static/js/main.843c14ef.js",
+    "index.html": "/ellie-website/index.html",
+    "main.21a5437f.css.map": "/ellie-website/static/css/main.21a5437f.css.map",
+    "main.843c14ef.js.map": "/ellie-website/static/js/main.843c14ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21a5437f.css",
+    "static/js/main.843c14ef.js"
+  ]
+}
