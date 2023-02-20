@@ -1,7 +1,7 @@
 {
   "name": "ellie2.0",
   "version": "0.1.0",
-  "homepage": "https://yelizabethla.github.io/ellie-website",
+  "homepage": "https://yelizabethla.github.io/ellie-website-dev",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
