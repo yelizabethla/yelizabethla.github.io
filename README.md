@@ -29,6 +29,13 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run serve`
+
+Runs `npm run build` as above and then immediately follows with `serve -s build` to create a local and network server of the build.
+
+**NOTE:** Make sure to have *"serve"* installed via `npm install -g serve`
+
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
@@ -68,3 +75,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### To Enable editing:
+
+```bash
+sudo chown -R `whoami` <path to directory>
+```

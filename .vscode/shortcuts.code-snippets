@@ -1,0 +1,133 @@
+{
+	// Place your sb-shopify-theme-v3 workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": ":log",
+	// 	"body": [
+	// 		"console.log($1);",
+  //    "$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// },
+  "Title Block": {
+    "scope": "javascript",
+    "prefix": "title",
+    "body": [
+      "{ type: 'title',",
+      "  data: '${1:title_text}'",
+      "},",
+    ],
+    "description": "JSON Title Block for Blogs"
+  },
+  "Body Block": {
+    "scope": "javascript",
+    "prefix": "body",
+    "body": [
+      "{ type: 'body',",
+      "  data: `${1:markdown_text}`",
+      "},",
+    ],
+    "description": "JSON Body Block for Blogs"
+  },
+  "Padding Block": {
+    "scope": "javascript",
+    "prefix": "padding",
+    "body": [
+      "{ type: 'padding'",
+      "},",
+    ],
+    "description": "JSON Padding Block for Blogs"
+  },
+  "Image Block": {
+    "scope": "javascript",
+    "prefix": "image",
+    "body": [
+      "{ type: 'image',",
+      "  data: {",
+      "    src: '/assets/portfolio/${1:file_name}',",
+      "    alt: '${2:alternate_text}',",
+      "    body: `${3:markdown_text(optional)}`,",
+      "  }",
+      "},",
+    ],
+    "description": "JSON Image Block for Blogs"
+  },
+  "Text Columns Block": {
+    "scope": "javascript",
+    "prefix": "text-cols",
+    "body": [
+      "{ type: 'text columns',",
+      "  data: [",
+      "    {",
+      "      title: '${1:text}',",
+      "      body: `${2:markdown_text}`,",
+      "      weight: ${3:integer},",
+      "    },",
+      "  ]",
+      "},",
+    ],
+    "description": "JSON Text Columns Block for Blogs"
+  },
+  "Image Row Block": {
+    "scope": "javascript",
+    "prefix": "image-row",
+    "body": [
+      "{ type: 'image row',",
+      "  data: [",
+      "    {",
+      "      src: '/assets/portfolio/${1:file_name}',",
+      "      alt: '${2:alternate_text}',",
+      "      body: `${3:markdown_text(optional)}`,",
+      "      weight: ${4:integer(optional)},",
+      "    }",
+      "  ],",
+      "},",
+    ],
+    "description": "JSON Image Row Block for Blogs"
+  },
+  "Image Columns 2 Block": {
+    "scope": "javascript",
+    "prefix": "image-cols-2",
+    "body": [
+      "{ type: 'image columns 2',",
+      "  data: [",
+      "    [",
+      "      {",
+      "        src: '/assets/portfolio/${1:file_name}',",
+      "        alt: '${2:alternate_text}',",
+      "        body: `${3:markdown_text}`,",
+      "      },",
+      "    ],",
+      "    [",
+      "      {",
+      "        src: '/assets/portfolio/${4:file_name}',",
+      "        alt: '${5:alternate_text}',",
+      "        body: `${6:markdown_text}`,",
+      "      },",
+      "    ],",
+      "  ],",
+      "},",
+    ],
+    "description": "JSON Image Columns Block for Blogs"
+  },
+  "Video Block": {
+    "scope": "javascript",
+    "prefix": "video",
+    "body": [
+      "{ type: 'video',",
+      "  data: {",
+      "    src: '${1:url}',",
+      "    title: '${2:unique_title}',",
+      "    allowFullScreen: ${3:true},",
+      "  }",
+      "},",
+    ],
+    "description": "JSON Video Block for Blogs"
+  },
+}
