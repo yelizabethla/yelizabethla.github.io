@@ -6,501 +6,13 @@
   jobs: <array of job titles (can be 1 or more)>,
   featureImage: <path for asset>,
   pathname: <path for route via index.js>,
-  blog: {
-    {
-      type: 'title',
-      title: '',
-    },
-    
-  }
+  blog: [],
 }
 
 */
 
 export const blogEntries = [
-  {
-    name: 'Render',
-    description: 'Streamline Communication',
-    jobs: ['Client Liaison', 'UX Designer'],
-    featureImage: './assets/portfolio/render.webp',
-    pathname: '/portfolio/render',
-    blog: [
-      { type: 'title',
-        data: 'Overview',
-      },
-      { type: 'text columns',
-        data: [
-          {
-            title: `Client & Duration`,
-            body: `[Pennsylvania Prison Society](https://www.prisonsociety.org/), Fifteen weeks (Spring 2020)`,
-            weight: 3,
-          },
-          {
-            title: `Collaborators`,
-            body: `Elliot Allard, Jiayi Zhao, Jennifer Kong, Zoe Lin`,
-            weight: 3,
-          },
-          {
-            title: `Primary Role`,
-            body: `Client Liason: *Point of contact for both the client and faculty advisor* 
-            UX Designer: *Created and iterated on prototypes; focused on interactions*`,
-            weight: 6,
-          }
-        ]
-      },
-      { type: 'body',
-        data: `Pennsylvania Prison Society (PPS) is a non-profit that advocates for incarcerated individuals by hearing their concerns/ problems (via "requests") and communicating their needs to the Warden. We were asked to help PPS in the development of a workflow system to be utilized by over 250+ Offcial Volunteers (OVs) across the state.`,
-      },
-      { type: 'padding',
-      },
-      { type: 'title',
-        data: 'Challenge'
-      },
-      { type: 'text columns',
-        data: [
-          {
-            title: 'How might we streamline communication between the central office and regional chapters to increase transparency?',
-            body: `The organization has 43 chapters throughout Pennsylvania, and each functions differently due to various factors such as size of the chapter, number of requests, and relationship with the prison. Because of this, there isn't a standardized way for the central office to receive regular updates from individual chapters which hinders the organization from recognizing their impact as a whole.`,
-          }
-        ]
-      },
-      { type: 'padding',
-      },
-      { type: 'title',
-        data: 'Solution'
-      },
-      { type: 'body',
-        data: `Render is a web-based request managing system where requests can be uploaded and delegated to OVs, updated with actionable items post-visit, and analyzed to identify common problems and trends. To make visit reports as convenient as possible, we also propose that an Interactive Voice Response (IVR) be created.`,
-      },
-      { type: 'image',
-        data: {
-          src: '/assets/portfolio/render_report.gif',
-          alt: 'Render Gif',
-        }
-      },
-      { type: 'body',
-        data: `It is designed on four central ideas:`,
-      },
-      { type: 'text columns',
-        data: [
-          {
-            title: 'Central Hub',
-            body: `A system that allows documents to be easily shared and accessed by chapters and the central office`,
-            weight: 3,
-          },
-          {
-            title: 'Access Levels',
-            body: `A required log in that indicates which features & information are relevant to the individual, based on their role in the organization`,
-            weight: 3,
-          },
-          {
-            title: 'Request Analysis',
-            body: `A summary of the type of requests the organization receives to notice trends of problems across the state to tackle systemic issues`,
-            weight: 3,
-          },
-          {
-            title: 'Minimalist Interface',
-            body: `A clean and simple design that is straightforward for anyone to use, especially those who aren't well experienced with technology`,
-            weight: 3,
-          },
-        ],
-      },
-      { type: 'padding',
-      },
-      { type: 'title',
-        data: 'Approach',
-      },
-      { type: 'text columns',
-        data: [
-          {
-            title: 'Semi-Structured Interview',
-            body: `Learned how the organization functions, from the role of different stakeholders and the intake of requests\n* Spoke to the Prison Monitoring Director and Director of Volunteers (also formerly incarcerated)\n* Created a stakeholder map with color-coded relations to represent the different methods of communication`,
-            weight: 6,
-          },
-          {
-            title: 'Stakeholder Map',
-            body: `Synthesized information and visually represented the interactions between stakeholders, and identified pain points:\n* Too many channels and methods of receiving requests (can't be helped)\n* Results in requests getting lost due to numerous redirects\n* Reporting request updates is confusing/complex, not always clear who to send it to`,
-            weight: 6,
-          }
-        ]
-      },
-      { type: 'image',
-        data: {
-          src: '/assets/portfolio/render_flow_chart.webp',
-          alt: 'Render Flow Chart',
-        }
-      },
-      { type: 'text columns',
-        data: [
-          {
-            title: 'Contextual Inquiry',
-            body: `Shadowed OVs on their visit to a prison and observed a chapter meeting. Key insights include:\n* There are two ways of delegating requests: based on the type of request, a volunteer of a specific demographic (e.g. profession, gender) will be assigned vs whoever has the capacity and can quickly address it\n* OVs heavily rely on memory when discussing previous similar requests and their consequences, request history of a specific inmate, etc`,
-            weight: 6,
-          },
-          {
-            title: 'User Journey Map',
-            body: `Focused on the experiences of an OV and the prosses they go through when they are assigned to address a request. Identified more pain points:\n* The prison restricts OVs from bringing any objects into the facility, which prohibits note-taking\n* There isn't a database that can be used as a resource to look up relevant requests\n* There isn't a standard report format, so OVs don't know what information to include`,
-            weight: 6,
-          }
-        ]
-      },
-      { type: 'image',
-        data: {
-          src: '/assets/portfolio/render_journey_map.webp',
-          alt: 'Render Journey Map',
-        }
-      },
-      { type: 'text columns',
-        data: [
-          {
-            title: 'Crazy 8',
-            body: `Brainstormed 8 possible solutions in 8 minutes to quickly ideate features and systems. Ideas were centered around:\n* Analysis: the ability to filter through requests and analyze them and find insights and statistics\n* Unification: documenting all intake and assignment of requests, and reports of visitiations\n* Efficiency: simplify and standardize reporting, to make it as convinent as possible`,
-            weight: 6,
-          },
-          {
-            title: 'Speed Dating',
-            body: `Created storyboards and asked participants to envision using the proposed tool in given scenario. Recorded their thoughts:\n* Ran sessions with the Prison Monitoring Director (forwards requests to specific chapters) and 4 OVs\n* Received feedback that some individuals would wish to remain anonymous because some requests are very private matters\n* Need to handle requests that are informational, and don't require a visitation
-            `,
-            weight: 6,
-          },
-        ]
-      },
-      { type: 'image',
-        data: {
-          src: '/assets/portfolio/render_comic_strip.webp',
-          alt: 'Render Comic Strip',
-        }
-      },
-      { type: 'text columns',
-        data: [
-          {
-            title: 'Initial Design',
-            body: `For the low fidelity design, we focused on the experiences of a chapter convener and created web-based database for conveners to upload, assign, and update requests`,
-          },
-        ]
-      },
-      { type: 'image columns 2',
-        data: [
-          [
-            {
-              src: '/assets/portfolio/render_designs_1.webp',
-              alt: 'Render Designs 1',
-            },
-          ],
-          [
-            {
-              src: '/assets/portfolio/render_designs_2.webp',
-              alt: 'Render Designs 2',
-            },
-          ],
-        ],
-      },
-      { type: 'body',
-        data: `**Home page:** prioritized displaying the tasks of a convener to allow them to easily navigate through their task; also included a dashboard of statistics on the bottom which can be expanded to display data`
-      },
-      { type: 'image columns 2',
-        data: [
-          [
-            {
-              src: '/assets/portfolio/render_designs_3.webp',
-              alt: 'Render Designs 3',
-              body: `**Request list page:** organized request information in table format, with color coding to help categorize the progress of each request`,
-            },
-          ],
-          [
-            {
-              src: '/assets/portfolio/render_designs_4.webp',
-              alt: 'Render Designs 4',
-              body: `**Upload request page:** form to upload a request into the system-- can upload the original request letter from the incarcerated to let the system parse the text from the photo, or can manually input the information`,
-            },
-          ],
-        ],
-      },
-      { type: 'image columns 2',
-        data: [
-          [
-            {
-              src: '/assets/portfolio/render_designs_5.webp',
-              alt: 'Render Designs 5',
-              body: `**Assign request page:** to assist conveners in delegating the request to the most competent volunteer, included the specialties of each volunteer, in addition to the current number of requests already assigned to them`,
-            },
-          ],
-          [
-            {
-              src: '/assets/portfolio/render_designs_6.webp',
-              alt: 'Render Designs 6',
-              body: `**Upload report page:** form to update the request with information gathered from visitation, includes the date of visit and whether the incarcerated wishes to remain anonymous for the record`,
-            },
-          ],
-        ],
-      },
-      { type: 'padding'
-      },
-      { type: 'text columns',
-        data: [
-          {
-            title: 'Think Aloud Protocol',
-            body: `Determined the usability of the web interface by asking 3 Conveners to perform tasks (1. upload a report, 2. complete a request, 3. assign a request to an OV). Learned the following:\n* It's confusing to have both "Upload Report" and "Complete Request" since they both update the request, the only difference is whether or not the request gets archived afterwards\n* Finding a specific request to update was time-consuming because the Request List isn't organized and all requests, even those that have been completed, are shown\n* Several participants expressed that they want a confirmation from the Central Office that they have seen the report`,
-            weight: 6,
-          },
-          {
-            title: 'Wizard of Oz',
-            body: `Created a script and simulated an Interactive Voice Response for OVs to report via phone call\n* 3 OVs were asked to act like they were interacting with a voicemail system to report a visit\n* Participants seemed annoyed of the pace of the questions; decided to combine short questions to reduce the number of confirmation of answers\n* OVs would share all information at once and would later have to repeat themselves when the report came to that section; reorganized the order to have more general questions (e.g. next steps) in the front and then put shorter/ logistical questions at end (e.g. request type)`,
-            weight: 6,
-          }
-        ]
-      },
-      { type: 'image',
-        data: {
-          src: '/assets/portfolio/render_wizard_chat.webp',
-          alt: 'Render Wizard Chat',
-        }
-      },
-      { type: 'padding'
-      },
-      { type: 'text columns',
-        data: [
-          {
-            title: 'Final Design',
-            body: `For the high fidelity design, we changed the focus of our user to OVs because they are the majority of our users (250+) and the most technologically challenged group (80% are OVs above 75). The designs focused more on receiving and updating requests. Made the following modifications:\n* Combined "Upload Report" and "Complete Request" into one action and indicated active and archived requests with different colors\n* Decluttered the Request List to only contain active requests, and added an option for OVs to upload their own request for cases when they directly receive a request from an incarcerated individual who they have an established relationship with\n* Created "Past Requests" where OVs can filter through completed requests and added column that indicates when the Central Office has seen the report, to assure OVs the value of their work`,
-          },
-        ]
-      },
-      { type: 'image row',
-        data: [
-          {
-            src: '/assets/portfolio/render_final_1.webp',
-            alt: 'Render Final Design 1',
-            weight: 6,
-          },
-          {
-            src: '/assets/portfolio/render_final_2.webp',
-            alt: 'Render Final Design 2',
-            weight: 6,
-          },
-          {
-            src: '/assets/portfolio/render_final_3.webp',
-            alt: 'Render Final Design 3',
-            weight: 6,
-          },
-          {
-            src: '/assets/portfolio/render_final_4.webp',
-            alt: 'Render Final Design 4',
-            weight: 6,
-          }
-        ]
-      },
-      { type: 'padding'
-      },
-    ]
-  },
-  {
-    name: 'sleepU',
-    description: 'Improve Sleep Quality and Habits',
-    jobs: ['Participant Recruiter', 'User Researcher'],
-    featureImage: './assets/portfolio/sleepU.webp',
-    pathname: '/portfolio/sleepu',
-    blog: [
-      { type: 'title',
-        data: 'Overview'
-      },
-      { type: 'text columns',
-        data: [
-          {
-            title: 'Lab & Duration',
-            body: `[Smart Sensing for Humans Lab](http://smashlab.io/), Feb 2019 - May 2020`,
-            weight: 3,
-          },
-          {
-            title: 'Team',
-            body: `Julian Ramos *PhD Candidate*, Carolyn Zhong *Designer*`,
-            weight: 3,
-          },
-          {
-            title: 'Primary Role',
-            body: `Research Participant Recruiter: *screened and onboarded participants*
-            User Researcher: *conducted research studies and synthesis activities*
-            Video Editor: *created a project overview video for a design conference*`,
-            weight: 6,
-          },
-        ]
-      },
-      { type: 'title',
-        data: 'Challenge'
-      },
-      { type: 'text columns',
-        data: [
-          {
-            title: 'How might we utilize data to help people improve their daily habits, sleep habits, and sleep quality?',
-            body: `Although sleep is essential for a person's health and wellbeing, research conducted by the NSF has shown that tens of millions of people are sleep deprived. Over the years, the number of sleep-tracking products have grown, but none of them help people understand how to improve their sleep. There is a need for a tool that goes beyond the generic tip of "minimize caffine intake" and "reduce blue light before bed", and help each individual understand what specific habits benefit their sleep.`,
-          },
-        ]
-      },
-      { type: 'title',
-        data: 'The Project'
-      },
-      { type: 'body',
-        data: `SleepU is a sleep-intervention app that uses Fitbit data and user-inputed trackings to provide personal sleep recommendations. These help users adjust their daily behaviors and sleep environment to optimize their sleep quality.`
-      },
-      { type: 'body',
-        data: `It accomplishes this with four features:`
-      },
-      { type: 'text columns',
-        data: [
-          {
-            title: 'Habit Tracker',
-            body: `A daily record of major factors of sleep (e.g. meal times, exercise, stress levels) to determine which combination of habits result in the best sleep for the individual`,
-            weight: 3,
-          },
-          {
-            title: 'Sleep Decision Making Tool',
-            body: `A machine learning model that predicts how an evening activity will affect an individuals sleep, and allows them to make informed decisions`,
-            weight: 3,
-          },
-          {
-            title: 'Interruptibility',
-            body: `An algorithm that determines how receptive one is to receive a notification based on phone usage (e.g. checking another notficiation, extensive use of social app)`,
-            weight: 3,
-          },
-          {
-            title: 'Contextual Reminders',
-            body: `A notification that gives a recommendation based on the time and location of the individual (e.g. if at a coffee shop past 3 pm, will remind them to buy decaf)`,
-            weight: 3,
-          },
-        ]
-      },
-      { type: 'title',
-        data: 'Approach'
-      },
-      { type: 'text columns',
-        data: [
-          {
-            title: 'Beta Testing',
-            body: `28 college students participated in a semester long study. In the first 2 weeks, they only used a Fitbit to record their sleep data. Afterwards, they were assigned to either visit a health specialist who provided them with a sleep assessment and consulation, or used SleepU. After a month of the first condition, participants were assigned to the other conditions for another month.\n* Everyday, participants filled out a "Sleep Diary" where they logged habits that contribute to sleep\n* Before and after each phase (4 times total), participants filled out a questionnaire that acccessed their sleep practices and other habits`,
-            weight: 6,
-          },
-          {
-            title: 'Semi-structured Interview',
-            body: `Interviewed half the participants from prior study and asked about their sleep during the semester.\n* Compared their sleep to other semesters, identified external factors beyond the study (e.g. class workload)\n* Discussed what factors they think affect their sleep, and any changes they made in their habit\n* Compared the two conditions: sleep appointment and using SleepU\n* Recounted their experience with SleepU; which recommendations they were following, and which weren't useful/ relevant`,
-            weight: 6,
-          },
-          {
-            title: 'Affinity Diagram',
-            body: `Transcribed 13 interviews and grouped similar quotes to find common themes. We found:\n* Overall, using SleepU was as effective, or better than visiting a health specialist\n* Participants found the recommendations and habit tracking to be helpful; they became more conscious of factors that affect their sleep (e.g. many established a bedtime routine)\n* Many expressed that recommendations got repetivitive after a while. This was because after the model determined which habits work best for the individual, it would recommend the same ones to ensure that they were being followed. There is a need for people to mark which habits they reguarly practice without the help of the app, so that SleepU can recommend new ones.\n* Participants also shared that they wanted to learn more about sleep in general, and why specific recommendations improve sleep`,
-          }
-        ]
-      },
-      { type: 'image',
-        data: {
-          src: '/assets/portfolio/sleepU_storyboard.webp',
-          alt: 'sleepU Storyboard',
-        }
-      },
-      { type: 'text columns',
-        data: [
-          {
-            title: 'Storyboard',
-            body: `Brainstormed ways we can improve SleepU based on user needs identified and specific feedback we received from participants during the interview. Ideas centered around two types of interactions:\n* App to person (storyboards 2, 3, 4): Make recommendations more specific and actionable (e.g. contextual reminders through the use phone data, time, and location)\n* Person to app (storyboards 1, 5, 6): Visualize/ explain how actions affect sleep, help individuals make good decisions for their sleep (e.g. decision making tool, habit tracker)`,
-            weight: 4,
-            midWeight: 12,
-          },
-          {
-            title: 'Speed Dating',
-            body: `Interviewed 8 new individuals; learned if people could relate to scenarios and if there was an actual need for the solution. Key findings:\n* Storyboard 2: People know that it's important to have a consistent sleep schedule, but aren't always able to go to sleep when they want because they are finishing up work. In this case, a reminder from SleepU wouldn't be helpful\n* Storyboards 3 and 4 were liked better, since it's regarding something the individual has control over and preventing bad choices\n* Storyboard 5: Logging habits takes effort, and inputing data would depend on how motivated they are to improve their sleep\n* Storyboard 6: Depending on the importance of the morning plan, usage of decision tool would differ (e.g. if high stakes, would still stay in for mental preperation)`,
-            weight: 8,
-            midWeight: 12,
-          },
-        ]
-      },
-      { type: 'image row',
-        data: [
-          {
-            src: '/assets/portfolio/sleepU_comic_1.webp',
-            alt: 'sleepU Comic 1',
-            weight: 4,
-            midWeight: 6,
-          },
-          {
-            src: '/assets/portfolio/sleepU_comic_2.webp',
-            alt: 'sleepU Comic 2',
-            weight: 4,
-            midWeight: 6,
-          },
-          {
-            src: '/assets/portfolio/sleepU_comic_3.webp',
-            alt: 'sleepU Comic 3',
-            weight: 4,
-            midWeight: 6,
-          },
-          {
-            src: '/assets/portfolio/sleepU_comic_4.webp',
-            alt: 'sleepU Comic 4',
-            weight: 4,
-            midWeight: 6,
-          },
-          {
-            src: '/assets/portfolio/sleepU_comic_5.webp',
-            alt: 'sleepU Comic 5',
-            weight: 4,
-            midWeight: 6,
-          },
-          {
-            src: '/assets/portfolio/sleepU_comic_6.webp',
-            alt: 'sleepU Comic 6',
-            weight: 4,
-            midWeight: 6,
-          },
-        ],
-      },
-      { type: 'text columns',
-        data: [
-          {
-            title: 'Interface Design',
-            body: `A simple interface design for the home page, which will display the recommendations for the day`,
-          },
-        ]
-      },
-      { type: 'image row',
-        data: [
-          {
-            src: '/assets/portfolio/sleepU_mobile_1.webp',
-            alt: 'sleepU Mobile Slide 1',
-            weight: 3,
-          },
-          {
-            src: '/assets/portfolio/sleepU_mobile_2.webp',
-            alt: 'sleepU Mobile Slide 2',
-            weight: 3,
-          },{
-            src: '/assets/portfolio/sleepU_mobile_3.webp',
-            alt: 'sleepU Mobile Slide 3',
-            weight: 3,
-          },{
-            src: '/assets/portfolio/sleepU_mobile_4.webp',
-            alt: 'sleepU Mobile Slide 4',
-            weight: 3,
-          },
-        ],
-      },
-      { type: 'title',
-        data: 'Design Conference'
-      },
-      { type: 'body',
-        data: `In August 2019, we submitted our project to the [Health x Design](https://centerhxd.com/collaborations/projects/health-x-design-building-health-into-everyday-life/): *Building Health into Everyday Life* Design Challenge. For the submission, I created a 3 minute video describing our project, from the importance of our work and the functionality of SleepU.`
-      },
-      { type: 'video',
-        data: {
-          src: 'https://www.youtube.com/embed/YVGc2D4oShU',
-          title: 'Sleep U Demo',
-          allowFullScreen: true,
-        }
-      },
-      { type: 'padding'
-      },
-    ]
-  },
-  {
-    name: 'Aerial Metrics',
+  { name: 'Aerial Metrics',
     description: 'Redesign & Implement a Website',
     jobs: ['UX Designer', 'Front-End Engineer'],
     featureImage: './assets/portfolio/aerial_metrics.webp',
@@ -916,6 +428,485 @@ export const blogEntries = [
       { type: 'padding'
       },
     ],
+  },
+  { name: 'sleepU',
+    description: 'Improve Sleep Quality and Habits',
+    jobs: ['Participant Recruiter', 'User Researcher'],
+    featureImage: './assets/portfolio/sleepU.webp',
+    pathname: '/portfolio/sleepu',
+    blog: [
+      { type: 'title',
+        data: 'Overview'
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'Lab & Duration',
+            body: `[Smart Sensing for Humans Lab](http://smashlab.io/), Feb 2019 - May 2020`,
+            weight: 3,
+          },
+          {
+            title: 'Team',
+            body: `Julian Ramos *PhD Candidate*, Carolyn Zhong *Designer*`,
+            weight: 3,
+          },
+          {
+            title: 'Primary Role',
+            body: `Research Participant Recruiter: *screened and onboarded participants*
+            User Researcher: *conducted research studies and synthesis activities*
+            Video Editor: *created a project overview video for a design conference*`,
+            weight: 6,
+          },
+        ]
+      },
+      { type: 'title',
+        data: 'Challenge'
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'How might we utilize data to help people improve their daily habits, sleep habits, and sleep quality?',
+            body: `Although sleep is essential for a person's health and wellbeing, research conducted by the NSF has shown that tens of millions of people are sleep deprived. Over the years, the number of sleep-tracking products have grown, but none of them help people understand how to improve their sleep. There is a need for a tool that goes beyond the generic tip of "minimize caffine intake" and "reduce blue light before bed", and help each individual understand what specific habits benefit their sleep.`,
+          },
+        ]
+      },
+      { type: 'title',
+        data: 'The Project'
+      },
+      { type: 'body',
+        data: `SleepU is a sleep-intervention app that uses Fitbit data and user-inputed trackings to provide personal sleep recommendations. These help users adjust their daily behaviors and sleep environment to optimize their sleep quality.`
+      },
+      { type: 'body',
+        data: `It accomplishes this with four features:`
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'Habit Tracker',
+            body: `A daily record of major factors of sleep (e.g. meal times, exercise, stress levels) to determine which combination of habits result in the best sleep for the individual`,
+            weight: 3,
+          },
+          {
+            title: 'Sleep Decision Making Tool',
+            body: `A machine learning model that predicts how an evening activity will affect an individuals sleep, and allows them to make informed decisions`,
+            weight: 3,
+          },
+          {
+            title: 'Interruptibility',
+            body: `An algorithm that determines how receptive one is to receive a notification based on phone usage (e.g. checking another notficiation, extensive use of social app)`,
+            weight: 3,
+          },
+          {
+            title: 'Contextual Reminders',
+            body: `A notification that gives a recommendation based on the time and location of the individual (e.g. if at a coffee shop past 3 pm, will remind them to buy decaf)`,
+            weight: 3,
+          },
+        ]
+      },
+      { type: 'title',
+        data: 'Approach'
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'Beta Testing',
+            body: `28 college students participated in a semester long study. In the first 2 weeks, they only used a Fitbit to record their sleep data. Afterwards, they were assigned to either visit a health specialist who provided them with a sleep assessment and consulation, or used SleepU. After a month of the first condition, participants were assigned to the other conditions for another month.\n* Everyday, participants filled out a "Sleep Diary" where they logged habits that contribute to sleep\n* Before and after each phase (4 times total), participants filled out a questionnaire that acccessed their sleep practices and other habits`,
+            weight: 6,
+          },
+          {
+            title: 'Semi-structured Interview',
+            body: `Interviewed half the participants from prior study and asked about their sleep during the semester.\n* Compared their sleep to other semesters, identified external factors beyond the study (e.g. class workload)\n* Discussed what factors they think affect their sleep, and any changes they made in their habit\n* Compared the two conditions: sleep appointment and using SleepU\n* Recounted their experience with SleepU; which recommendations they were following, and which weren't useful/ relevant`,
+            weight: 6,
+          },
+          {
+            title: 'Affinity Diagram',
+            body: `Transcribed 13 interviews and grouped similar quotes to find common themes. We found:\n* Overall, using SleepU was as effective, or better than visiting a health specialist\n* Participants found the recommendations and habit tracking to be helpful; they became more conscious of factors that affect their sleep (e.g. many established a bedtime routine)\n* Many expressed that recommendations got repetivitive after a while. This was because after the model determined which habits work best for the individual, it would recommend the same ones to ensure that they were being followed. There is a need for people to mark which habits they reguarly practice without the help of the app, so that SleepU can recommend new ones.\n* Participants also shared that they wanted to learn more about sleep in general, and why specific recommendations improve sleep`,
+          }
+        ]
+      },
+      { type: 'image',
+        data: {
+          src: '/assets/portfolio/sleepU_storyboard.webp',
+          alt: 'sleepU Storyboard',
+        }
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'Storyboard',
+            body: `Brainstormed ways we can improve SleepU based on user needs identified and specific feedback we received from participants during the interview. Ideas centered around two types of interactions:\n* App to person (storyboards 2, 3, 4): Make recommendations more specific and actionable (e.g. contextual reminders through the use phone data, time, and location)\n* Person to app (storyboards 1, 5, 6): Visualize/ explain how actions affect sleep, help individuals make good decisions for their sleep (e.g. decision making tool, habit tracker)`,
+            weight: 4,
+            midWeight: 12,
+          },
+          {
+            title: 'Speed Dating',
+            body: `Interviewed 8 new individuals; learned if people could relate to scenarios and if there was an actual need for the solution. Key findings:\n* Storyboard 2: People know that it's important to have a consistent sleep schedule, but aren't always able to go to sleep when they want because they are finishing up work. In this case, a reminder from SleepU wouldn't be helpful\n* Storyboards 3 and 4 were liked better, since it's regarding something the individual has control over and preventing bad choices\n* Storyboard 5: Logging habits takes effort, and inputing data would depend on how motivated they are to improve their sleep\n* Storyboard 6: Depending on the importance of the morning plan, usage of decision tool would differ (e.g. if high stakes, would still stay in for mental preperation)`,
+            weight: 8,
+            midWeight: 12,
+          },
+        ]
+      },
+      { type: 'image row',
+        data: [
+          {
+            src: '/assets/portfolio/sleepU_comic_1.webp',
+            alt: 'sleepU Comic 1',
+            weight: 4,
+            midWeight: 6,
+          },
+          {
+            src: '/assets/portfolio/sleepU_comic_2.webp',
+            alt: 'sleepU Comic 2',
+            weight: 4,
+            midWeight: 6,
+          },
+          {
+            src: '/assets/portfolio/sleepU_comic_3.webp',
+            alt: 'sleepU Comic 3',
+            weight: 4,
+            midWeight: 6,
+          },
+          {
+            src: '/assets/portfolio/sleepU_comic_4.webp',
+            alt: 'sleepU Comic 4',
+            weight: 4,
+            midWeight: 6,
+          },
+          {
+            src: '/assets/portfolio/sleepU_comic_5.webp',
+            alt: 'sleepU Comic 5',
+            weight: 4,
+            midWeight: 6,
+          },
+          {
+            src: '/assets/portfolio/sleepU_comic_6.webp',
+            alt: 'sleepU Comic 6',
+            weight: 4,
+            midWeight: 6,
+          },
+        ],
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'Interface Design',
+            body: `A simple interface design for the home page, which will display the recommendations for the day`,
+          },
+        ]
+      },
+      { type: 'image row',
+        data: [
+          {
+            src: '/assets/portfolio/sleepU_mobile_1.webp',
+            alt: 'sleepU Mobile Slide 1',
+            weight: 3,
+          },
+          {
+            src: '/assets/portfolio/sleepU_mobile_2.webp',
+            alt: 'sleepU Mobile Slide 2',
+            weight: 3,
+          },{
+            src: '/assets/portfolio/sleepU_mobile_3.webp',
+            alt: 'sleepU Mobile Slide 3',
+            weight: 3,
+          },{
+            src: '/assets/portfolio/sleepU_mobile_4.webp',
+            alt: 'sleepU Mobile Slide 4',
+            weight: 3,
+          },
+        ],
+      },
+      { type: 'title',
+        data: 'Design Conference'
+      },
+      { type: 'body',
+        data: `In August 2019, we submitted our project to the [Health x Design](https://centerhxd.com/collaborations/projects/health-x-design-building-health-into-everyday-life/): *Building Health into Everyday Life* Design Challenge. For the submission, I created a 3 minute video describing our project, from the importance of our work and the functionality of SleepU.`
+      },
+      { type: 'video',
+        data: {
+          src: 'https://www.youtube.com/embed/YVGc2D4oShU',
+          title: 'Sleep U Demo',
+          allowFullScreen: true,
+        }
+      },
+      { type: 'padding'
+      },
+    ]
+  },
+  { name: 'Render',
+    description: 'Streamline Communication',
+    jobs: ['Client Liaison', 'UX Designer'],
+    featureImage: './assets/portfolio/render.webp',
+    pathname: '/portfolio/render',
+    blog: [
+      { type: 'title',
+        data: 'Overview',
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: `Client & Duration`,
+            body: `[Pennsylvania Prison Society](https://www.prisonsociety.org/), Fifteen weeks (Spring 2020)`,
+            weight: 3,
+          },
+          {
+            title: `Collaborators`,
+            body: `Elliot Allard, Jiayi Zhao, Jennifer Kong, Zoe Lin`,
+            weight: 3,
+          },
+          {
+            title: `Primary Role`,
+            body: `Client Liason: *Point of contact for both the client and faculty advisor* 
+            UX Designer: *Created and iterated on prototypes; focused on interactions*`,
+            weight: 6,
+          }
+        ]
+      },
+      { type: 'body',
+        data: `Pennsylvania Prison Society (PPS) is a non-profit that advocates for incarcerated individuals by hearing their concerns/ problems (via "requests") and communicating their needs to the Warden. We were asked to help PPS in the development of a workflow system to be utilized by over 250+ Offcial Volunteers (OVs) across the state.`,
+      },
+      { type: 'padding',
+      },
+      { type: 'title',
+        data: 'Challenge'
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'How might we streamline communication between the central office and regional chapters to increase transparency?',
+            body: `The organization has 43 chapters throughout Pennsylvania, and each functions differently due to various factors such as size of the chapter, number of requests, and relationship with the prison. Because of this, there isn't a standardized way for the central office to receive regular updates from individual chapters which hinders the organization from recognizing their impact as a whole.`,
+          }
+        ]
+      },
+      { type: 'padding',
+      },
+      { type: 'title',
+        data: 'Solution'
+      },
+      { type: 'body',
+        data: `Render is a web-based request managing system where requests can be uploaded and delegated to OVs, updated with actionable items post-visit, and analyzed to identify common problems and trends. To make visit reports as convenient as possible, we also propose that an Interactive Voice Response (IVR) be created.`,
+      },
+      { type: 'image',
+        data: {
+          src: '/assets/portfolio/render_report.gif',
+          alt: 'Render Gif',
+        }
+      },
+      { type: 'body',
+        data: `It is designed on four central ideas:`,
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'Central Hub',
+            body: `A system that allows documents to be easily shared and accessed by chapters and the central office`,
+            weight: 3,
+          },
+          {
+            title: 'Access Levels',
+            body: `A required log in that indicates which features & information are relevant to the individual, based on their role in the organization`,
+            weight: 3,
+          },
+          {
+            title: 'Request Analysis',
+            body: `A summary of the type of requests the organization receives to notice trends of problems across the state to tackle systemic issues`,
+            weight: 3,
+          },
+          {
+            title: 'Minimalist Interface',
+            body: `A clean and simple design that is straightforward for anyone to use, especially those who aren't well experienced with technology`,
+            weight: 3,
+          },
+        ],
+      },
+      { type: 'padding',
+      },
+      { type: 'title',
+        data: 'Approach',
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'Semi-Structured Interview',
+            body: `Learned how the organization functions, from the role of different stakeholders and the intake of requests\n* Spoke to the Prison Monitoring Director and Director of Volunteers (also formerly incarcerated)\n* Created a stakeholder map with color-coded relations to represent the different methods of communication`,
+            weight: 6,
+          },
+          {
+            title: 'Stakeholder Map',
+            body: `Synthesized information and visually represented the interactions between stakeholders, and identified pain points:\n* Too many channels and methods of receiving requests (can't be helped)\n* Results in requests getting lost due to numerous redirects\n* Reporting request updates is confusing/complex, not always clear who to send it to`,
+            weight: 6,
+          }
+        ]
+      },
+      { type: 'image',
+        data: {
+          src: '/assets/portfolio/render_flow_chart.webp',
+          alt: 'Render Flow Chart',
+        }
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'Contextual Inquiry',
+            body: `Shadowed OVs on their visit to a prison and observed a chapter meeting. Key insights include:\n* There are two ways of delegating requests: based on the type of request, a volunteer of a specific demographic (e.g. profession, gender) will be assigned vs whoever has the capacity and can quickly address it\n* OVs heavily rely on memory when discussing previous similar requests and their consequences, request history of a specific inmate, etc`,
+            weight: 6,
+          },
+          {
+            title: 'User Journey Map',
+            body: `Focused on the experiences of an OV and the prosses they go through when they are assigned to address a request. Identified more pain points:\n* The prison restricts OVs from bringing any objects into the facility, which prohibits note-taking\n* There isn't a database that can be used as a resource to look up relevant requests\n* There isn't a standard report format, so OVs don't know what information to include`,
+            weight: 6,
+          }
+        ]
+      },
+      { type: 'image',
+        data: {
+          src: '/assets/portfolio/render_journey_map.webp',
+          alt: 'Render Journey Map',
+        }
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'Crazy 8',
+            body: `Brainstormed 8 possible solutions in 8 minutes to quickly ideate features and systems. Ideas were centered around:\n* Analysis: the ability to filter through requests and analyze them and find insights and statistics\n* Unification: documenting all intake and assignment of requests, and reports of visitiations\n* Efficiency: simplify and standardize reporting, to make it as convinent as possible`,
+            weight: 6,
+          },
+          {
+            title: 'Speed Dating',
+            body: `Created storyboards and asked participants to envision using the proposed tool in given scenario. Recorded their thoughts:\n* Ran sessions with the Prison Monitoring Director (forwards requests to specific chapters) and 4 OVs\n* Received feedback that some individuals would wish to remain anonymous because some requests are very private matters\n* Need to handle requests that are informational, and don't require a visitation
+            `,
+            weight: 6,
+          },
+        ]
+      },
+      { type: 'image',
+        data: {
+          src: '/assets/portfolio/render_comic_strip.webp',
+          alt: 'Render Comic Strip',
+        }
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'Initial Design',
+            body: `For the low fidelity design, we focused on the experiences of a chapter convener and created web-based database for conveners to upload, assign, and update requests`,
+          },
+        ]
+      },
+      { type: 'image columns 2',
+        data: [
+          [
+            {
+              src: '/assets/portfolio/render_designs_1.webp',
+              alt: 'Render Designs 1',
+            },
+          ],
+          [
+            {
+              src: '/assets/portfolio/render_designs_2.webp',
+              alt: 'Render Designs 2',
+            },
+          ],
+        ],
+      },
+      { type: 'body',
+        data: `**Home page:** prioritized displaying the tasks of a convener to allow them to easily navigate through their task; also included a dashboard of statistics on the bottom which can be expanded to display data`
+      },
+      { type: 'image columns 2',
+        data: [
+          [
+            {
+              src: '/assets/portfolio/render_designs_3.webp',
+              alt: 'Render Designs 3',
+              body: `**Request list page:** organized request information in table format, with color coding to help categorize the progress of each request`,
+            },
+          ],
+          [
+            {
+              src: '/assets/portfolio/render_designs_4.webp',
+              alt: 'Render Designs 4',
+              body: `**Upload request page:** form to upload a request into the system-- can upload the original request letter from the incarcerated to let the system parse the text from the photo, or can manually input the information`,
+            },
+          ],
+        ],
+      },
+      { type: 'image columns 2',
+        data: [
+          [
+            {
+              src: '/assets/portfolio/render_designs_5.webp',
+              alt: 'Render Designs 5',
+              body: `**Assign request page:** to assist conveners in delegating the request to the most competent volunteer, included the specialties of each volunteer, in addition to the current number of requests already assigned to them`,
+            },
+          ],
+          [
+            {
+              src: '/assets/portfolio/render_designs_6.webp',
+              alt: 'Render Designs 6',
+              body: `**Upload report page:** form to update the request with information gathered from visitation, includes the date of visit and whether the incarcerated wishes to remain anonymous for the record`,
+            },
+          ],
+        ],
+      },
+      { type: 'padding'
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'Think Aloud Protocol',
+            body: `Determined the usability of the web interface by asking 3 Conveners to perform tasks (1. upload a report, 2. complete a request, 3. assign a request to an OV). Learned the following:\n* It's confusing to have both "Upload Report" and "Complete Request" since they both update the request, the only difference is whether or not the request gets archived afterwards\n* Finding a specific request to update was time-consuming because the Request List isn't organized and all requests, even those that have been completed, are shown\n* Several participants expressed that they want a confirmation from the Central Office that they have seen the report`,
+            weight: 6,
+          },
+          {
+            title: 'Wizard of Oz',
+            body: `Created a script and simulated an Interactive Voice Response for OVs to report via phone call\n* 3 OVs were asked to act like they were interacting with a voicemail system to report a visit\n* Participants seemed annoyed of the pace of the questions; decided to combine short questions to reduce the number of confirmation of answers\n* OVs would share all information at once and would later have to repeat themselves when the report came to that section; reorganized the order to have more general questions (e.g. next steps) in the front and then put shorter/ logistical questions at end (e.g. request type)`,
+            weight: 6,
+          }
+        ]
+      },
+      { type: 'image',
+        data: {
+          src: '/assets/portfolio/render_wizard_chat.webp',
+          alt: 'Render Wizard Chat',
+        }
+      },
+      { type: 'padding'
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'Final Design',
+            body: `For the high fidelity design, we changed the focus of our user to OVs because they are the majority of our users (250+) and the most technologically challenged group (80% are OVs above 75). The designs focused more on receiving and updating requests. Made the following modifications:\n* Combined "Upload Report" and "Complete Request" into one action and indicated active and archived requests with different colors\n* Decluttered the Request List to only contain active requests, and added an option for OVs to upload their own request for cases when they directly receive a request from an incarcerated individual who they have an established relationship with\n* Created "Past Requests" where OVs can filter through completed requests and added column that indicates when the Central Office has seen the report, to assure OVs the value of their work`,
+          },
+        ]
+      },
+      { type: 'image row',
+        data: [
+          {
+            src: '/assets/portfolio/render_final_1.webp',
+            alt: 'Render Final Design 1',
+            weight: 6,
+          },
+          {
+            src: '/assets/portfolio/render_final_2.webp',
+            alt: 'Render Final Design 2',
+            weight: 6,
+          },
+          {
+            src: '/assets/portfolio/render_final_3.webp',
+            alt: 'Render Final Design 3',
+            weight: 6,
+          },
+          {
+            src: '/assets/portfolio/render_final_4.webp',
+            alt: 'Render Final Design 4',
+            weight: 6,
+          }
+        ]
+      },
+      { type: 'padding'
+      },
+    ]
   },
 ];
 
