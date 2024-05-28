@@ -1,6 +1,44 @@
-# Getting Started with Create React App
+# Steps to Edit
+1. Make sure `VSCode`, `git`, and `node` are installed
+2. git clone the repo in the desired directory
+```bash
+cd <direcotry where you want repo>
+git clone <repo https link>
+cd <directory name>
+```
+3. Install `gh-pages` and `serve` globally
+```bash
+npm i -g gh-pages serve
+```
+4. install npm dependencies
+```bash
+npm i
+```
+5. You can now make modifications to the website in your local environment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# How to test
+You can test both the React build for quick updates and the final build in a local server
+
+## Live Testing
+```bash
+npm start
+```
+
+## Final Build Testing
+```bash
+npm run serve
+```
+To update the build you can just run `npm run build`
+
+
+# How to Deploy
+```bash
+npm run deploy
+```
+This will update the gh-pages branch which will update what is actually Live
+
+
 
 ## Available Scripts
 
