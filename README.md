@@ -20,7 +20,7 @@ npm i
 # How to test
 You can test both the React build for quick updates and the final build in a local server
 
-## Live Testing
+## Development Testing
 ```bash
 npm start
 ```
