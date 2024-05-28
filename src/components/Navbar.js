@@ -66,7 +66,7 @@ function NavLinks(params) {
         <NavLink href='/' tabIndex={2} ><FolderIcon/> PORTFOLIO</NavLink>
         <NavLink href='/thrifted' tabIndex={3} ><CheckroomIcon/> THRIFTED</NavLink>
         <NavLink href='/about' tabIndex={4} ><AutoAwesomeIcon/> ABOUT</NavLink>
-        <NavLink href='/assets/La, Elizabeth_Resume23.pdf' target="_blank" rel='noreferrer' tabIndex={5} ><FileOpenRoundedIcon/> RESUME</NavLink>
+        <NavLink href='/assets/Elizabeth (Ellie) La, Resume.pdf' target="_blank" rel='noreferrer' tabIndex={5} ><FileOpenRoundedIcon/> RESUME</NavLink>
       </div>
     :
       <Hamburger />
