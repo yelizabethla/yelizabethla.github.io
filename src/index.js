@@ -7,12 +7,20 @@ import About from './screens/About';
 import Render from './screens/blogs/Render';
 import SleepU from './screens/blogs/SleepU';
 import AerialMetrics from './screens/blogs/AerialMetrics';
-
+import ReactGA from 'react-ga4';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './index.css';
+import E1 from './screens/blogs/E1';
+import AutoRefi from './screens/blogs/AutoRefi';
+
+ReactGA.initialize('G-5RDXZ3Z1Q4', {
+  gaOptions: {
+    siteSpeedSampleRate: 100
+  }
+});
 
 const router = createBrowserRouter([
   {
@@ -39,6 +47,14 @@ const router = createBrowserRouter([
   {
     path: '/portfolio/aerial_metrics',
     element: <AerialMetrics />
+  },
+  {
+    path: '/portfolio/e1',
+    element: <E1 />
+  },
+  {
+    path: '/portfolio/auto_refi',
+    element: <AutoRefi />
   },
 ]);
 
