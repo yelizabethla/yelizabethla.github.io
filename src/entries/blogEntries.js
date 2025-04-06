@@ -4,7 +4,16 @@
   name: <title of project>,
   description: <h3 title on card>,
   jobs: <array of job titles (can be 1 or more)>,
-  featureImage: <path for asset>,
+  tileImage: {
+    uri: <path for asset>,
+    alt: <alt text for image>,
+  },
+  heroImage: {
+    uri: <path for asset>,
+    alt: <alt text for image>,
+    height: <height of image>,
+  },
+  isPasswordProtected: <boolean> | undefined,
   pathname: <path for route via index.js>,
   blog: [],
 }
@@ -15,8 +24,16 @@ export const blogEntries = [
   // { name: 'Auto Refi',
   //   description: 'Improve Sleep Quality and Habits',
   //   jobs: ['Participant Recruiter', 'User Researcher'],
-  //   featureImage: './assets/portfolio/sleepU.webp',
+  //   tileImage: {
+  //     uri: '/assets/portfolio/tbd',
+  //     alt: 'Auto Refi Blog Tile',
+  //   },
+  //   heroImage: {
+  //     uri: '/assets/portfolio/tbd',
+  //     alt: 'Auto Refi Cover',
+  //   },
   //   pathname: '/portfolio/auto_refi',
+  //   isPasswordProtected: true,
   //   blog: [
   //     { type: 'title',
   //       data: 'Overview'
@@ -219,7 +236,7 @@ export const blogEntries = [
   // { name: 'E1',
   //   description: 'Standardize & optimize workflow',
   //   jobs: ['UX Designer'],
-  //   featureImage: './assets/portfolio/sleepU.webp',
+  //   heroImage: './assets/portfolio/sleepU.webp',
   //   pathname: '/portfolio/e1',
   //   blog: [
   //     { type: 'title',
@@ -423,8 +440,17 @@ export const blogEntries = [
   { name: 'Aerial Metrics',
     description: 'Redesign & implement a website',
     jobs: ['UX Designer', 'Front-End Engineer'],
-    featureImage: './assets/portfolio/aerial_metrics.webp',
+    tileImage: {
+      uri: '/assets/portfolio/aerial_metrics.webp',
+      alt: 'Aerial Metrics Blog Tile',
+    },
+    heroImage: {
+      uri: '/assets/portfolio/aerial_metrics_cover.webp',
+      alt: 'Aerial Metrics App Screenshot',
+      height: 300,
+    },
     pathname: '/portfolio/aerial_metrics',
+    isPasswordProtected: false,
     blog: [
       { type: 'title',
         data: 'Overview',
@@ -841,8 +867,17 @@ export const blogEntries = [
   { name: 'sleepU',
     description: 'Leverage AI for personalization',
     jobs: ['User Researcher'],
-    featureImage: './assets/portfolio/sleepU.webp',
+    tileImage: {
+      uri: '/assets/portfolio/sleepU.webp',
+      alt: 'sleepU Blog Tile',
+    },
+    heroImage: {
+      uri: '/assets/portfolio/sleepU_cover.webp',
+      alt: 'SleepU App Screenshot',
+      height: 300,
+    },
     pathname: '/portfolio/sleepu',
+    isPasswordProtected: false,
     blog: [
       { type: 'title',
         data: 'Overview'
@@ -1045,8 +1080,17 @@ export const blogEntries = [
   { name: 'Render',
     description: 'Streamline communication',
     jobs: ['Product Manager', 'UX Designer'],
-    featureImage: './assets/portfolio/render.webp',
+    tileImage: {
+      uri: '/assets/portfolio/render.webp',
+      alt: 'Render Blog Tile',
+    },
+    heroImage: {
+      uri: '/assets/portfolio/render_cover.webp',
+      alt: 'Render App Screenshot',
+      height: 300,
+    },
     pathname: '/portfolio/render',
+    isPasswordProtected: false,
     blog: [
       { type: 'title',
         data: 'Overview',
