@@ -6,8 +6,8 @@ function BlogTiles() {
     blogEntries.map((blog, index) => {
       const jobs = blog.jobs.join(' | ');
       return (
-        <div key={index} className='blog-tile col-12 md:col-6 lg2:col-4'>
-          <a tabIndex={10 + index} className='flex flex-col bg-ellie-white m-4' href={blog.pathname}>
+        <div key={index} className='blog-tile col-12 md:col-6'>
+          <a tabIndex={10 + index} className='flex flex-col bg-ellie-white m-8' href={blog.pathname}>
             <img className='w-full rounded-lg' src={blog.tileImage?.uri || '/assets/default-fallback-image.png'} alt={`${blog.tileImage?.alt || blog.name + " Blog Tile" || "Blog Tile " + index}`} />
             <div className='grid place-items-center gap-2 p-4'>
               <div className='h3 text-center'>{blog.description}</div>
