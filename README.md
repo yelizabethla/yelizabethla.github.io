@@ -120,3 +120,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ```bash
 sudo chown -R `whoami` <path to directory>
 ```
+
+---
+# .env Password change
+1. Go to vault.dotenv.org
+2. In development and production file, update var REACT_APP_PASSWORD
+3. Run `npx dotenv-vault@latest pull`

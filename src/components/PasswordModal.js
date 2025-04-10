@@ -13,7 +13,7 @@ function PasswordModal({ isOpen, setIsOpen }) {
     
     e.target.querySelector('input[name="password"]').blur();
 
-    if (value === process.env.REACT_APP_PASSWORD) {
+    if (value === process.env.REACT_APP_PASSWORD || value === process.env.DOTENV_VAULT_PRODUCTION) {
       setIsOpen(false);
     } else {
       setIsIncorrect(true);

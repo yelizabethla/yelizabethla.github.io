@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="App">
       <main className='flex-grow'>
-        <Hero src="./assets/cover.webp" alt="homepage hero" animation="typewrite" centering={'right'}>Designer. | Researcher. | Creator. | Designer. Researcher. Creator.</Hero>
+        <Hero src="./assets/cover.webp" alt="homepage hero" animation="typewrite" centering={'left'}>Designer. | Researcher. | Creator. | Designer. Researcher. Creator.</Hero>
         <BlogsDisplay />
       </main>
     </div>

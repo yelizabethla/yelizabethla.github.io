@@ -21,218 +21,221 @@
 */
 
 export const blogEntries = [
-  // { name: 'Auto Refi',
-  //   description: 'Improve Sleep Quality and Habits',
-  //   jobs: ['Participant Recruiter', 'User Researcher'],
-  //   tileImage: {
-  //     uri: '/assets/portfolio/tbd',
-  //     alt: 'Auto Refi Blog Tile',
-  //   },
-  //   heroImage: {
-  //     uri: '/assets/portfolio/tbd',
-  //     alt: 'Auto Refi Cover',
-  //   },
-  //   pathname: '/portfolio/auto_refi',
-  //   isPasswordProtected: true,
-  //   blog: [
-  //     { type: 'title',
-  //       data: 'Overview'
-  //     },
-  //     { type: 'text columns',
-  //       data: [
-  //         {
-  //           title: 'Lab & Duration',
-  //           body: `[Smart Sensing for Humans Lab](http://smashlab.io/), Feb 2019 - May 2020`,
-  //           weight: 3,
-  //         },
-  //         {
-  //           title: 'Team',
-  //           body: `Julian Ramos *PhD Candidate*, Carolyn Zhong *Designer*`,
-  //           weight: 3,
-  //         },
-  //         {
-  //           title: 'Primary Role',
-  //           body: `Research Participant Recruiter: *screened and onboarded participants*
-  //           User Researcher: *conducted research studies and synthesis activities*
-  //           Video Editor: *created a project overview video for a design conference*`,
-  //           weight: 6,
-  //         },
-  //       ]
-  //     },
-  //     { type: 'title',
-  //       data: 'Challenge'
-  //     },
-  //     { type: 'text columns',
-  //       data: [
-  //         {
-  //           title: 'How might we utilize data to help people improve their daily habits, sleep habits, and sleep quality?',
-  //           body: `Although sleep is essential for a person's health and wellbeing, research conducted by the NSF has shown that tens of millions of people are sleep deprived. Over the years, the number of sleep-tracking products have grown, but none of them help people understand how to improve their sleep. There is a need for a tool that goes beyond the generic tip of "minimize caffine intake" and "reduce blue light before bed", and help each individual understand what specific habits benefit their sleep.`,
-  //         },
-  //       ]
-  //     },
-  //     { type: 'title',
-  //       data: 'The Project'
-  //     },
-  //     { type: 'body',
-  //       data: `SleepU is a sleep-intervention app that uses Fitbit data and user-inputed trackings to provide personal sleep recommendations. These help users adjust their daily behaviors and sleep environment to optimize their sleep quality.`
-  //     },
-  //     { type: 'body',
-  //       data: `It accomplishes this with four features:`
-  //     },
-  //     { type: 'text columns',
-  //       data: [
-  //         {
-  //           title: 'Habit Tracker',
-  //           body: `A daily record of major factors of sleep (e.g. meal times, exercise, stress levels) to determine which combination of habits result in the best sleep for the individual`,
-  //           weight: 3,
-  //         },
-  //         {
-  //           title: 'Sleep Decision Making Tool',
-  //           body: `A machine learning model that predicts how an evening activity will affect an individuals sleep, and allows them to make informed decisions`,
-  //           weight: 3,
-  //         },
-  //         {
-  //           title: 'Interruptibility',
-  //           body: `An algorithm that determines how receptive one is to receive a notification based on phone usage (e.g. checking another notficiation, extensive use of social app)`,
-  //           weight: 3,
-  //         },
-  //         {
-  //           title: 'Contextual Reminders',
-  //           body: `A notification that gives a recommendation based on the time and location of the individual (e.g. if at a coffee shop past 3 pm, will remind them to buy decaf)`,
-  //           weight: 3,
-  //         },
-  //       ]
-  //     },
-  //     { type: 'title',
-  //       data: 'Approach'
-  //     },
-  //     { type: 'text columns',
-  //       data: [
-  //         {
-  //           title: 'Beta Testing',
-  //           body: `28 college students participated in a semester long study. In the first 2 weeks, they only used a Fitbit to record their sleep data. Afterwards, they were assigned to either visit a health specialist who provided them with a sleep assessment and consulation, or used SleepU. After a month of the first condition, participants were assigned to the other conditions for another month.\n* Everyday, participants filled out a "Sleep Diary" where they logged habits that contribute to sleep\n* Before and after each phase (4 times total), participants filled out a questionnaire that acccessed their sleep practices and other habits`,
-  //           weight: 6,
-  //         },
-  //         {
-  //           title: 'Semi-structured Interview',
-  //           body: `Interviewed half the participants from prior study and asked about their sleep during the semester.\n* Compared their sleep to other semesters, identified external factors beyond the study (e.g. class workload)\n* Discussed what factors they think affect their sleep, and any changes they made in their habit\n* Compared the two conditions: sleep appointment and using SleepU\n* Recounted their experience with SleepU; which recommendations they were following, and which weren't useful/ relevant`,
-  //           weight: 6,
-  //         },
-  //         {
-  //           title: 'Affinity Diagram',
-  //           body: `Transcribed 13 interviews and grouped similar quotes to find common themes. We found:\n* Overall, using SleepU was as effective, or better than visiting a health specialist\n* Participants found the recommendations and habit tracking to be helpful; they became more conscious of factors that affect their sleep (e.g. many established a bedtime routine)\n* Many expressed that recommendations got repetivitive after a while. This was because after the model determined which habits work best for the individual, it would recommend the same ones to ensure that they were being followed. There is a need for people to mark which habits they reguarly practice without the help of the app, so that SleepU can recommend new ones.\n* Participants also shared that they wanted to learn more about sleep in general, and why specific recommendations improve sleep`,
-  //         }
-  //       ]
-  //     },
-  //     { type: 'image',
-  //       data: {
-  //         src: '/assets/portfolio/sleepU_storyboard.webp',
-  //         alt: 'sleepU Storyboard',
-  //       }
-  //     },
-  //     { type: 'text columns',
-  //       data: [
-  //         {
-  //           title: 'Storyboard',
-  //           body: `Brainstormed ways we can improve SleepU based on user needs identified and specific feedback we received from participants during the interview. Ideas centered around two types of interactions:\n* App to person (storyboards 2, 3, 4): Make recommendations more specific and actionable (e.g. contextual reminders through the use phone data, time, and location)\n* Person to app (storyboards 1, 5, 6): Visualize/ explain how actions affect sleep, help individuals make good decisions for their sleep (e.g. decision making tool, habit tracker)`,
-  //           weight: 4,
-  //           midWeight: 12,
-  //         },
-  //         {
-  //           title: 'Speed Dating',
-  //           body: `Interviewed 8 new individuals; learned if people could relate to scenarios and if there was an actual need for the solution. Key findings:\n* Storyboard 2: People know that it's important to have a consistent sleep schedule, but aren't always able to go to sleep when they want because they are finishing up work. In this case, a reminder from SleepU wouldn't be helpful\n* Storyboards 3 and 4 were liked better, since it's regarding something the individual has control over and preventing bad choices\n* Storyboard 5: Logging habits takes effort, and inputing data would depend on how motivated they are to improve their sleep\n* Storyboard 6: Depending on the importance of the morning plan, usage of decision tool would differ (e.g. if high stakes, would still stay in for mental preperation)`,
-  //           weight: 8,
-  //           midWeight: 12,
-  //         },
-  //       ]
-  //     },
-  //     { type: 'image row',
-  //       data: [
-  //         {
-  //           src: '/assets/portfolio/sleepU_comic_1.webp',
-  //           alt: 'sleepU Comic 1',
-  //           weight: 4,
-  //           midWeight: 6,
-  //         },
-  //         {
-  //           src: '/assets/portfolio/sleepU_comic_2.webp',
-  //           alt: 'sleepU Comic 2',
-  //           weight: 4,
-  //           midWeight: 6,
-  //         },
-  //         {
-  //           src: '/assets/portfolio/sleepU_comic_3.webp',
-  //           alt: 'sleepU Comic 3',
-  //           weight: 4,
-  //           midWeight: 6,
-  //         },
-  //         {
-  //           src: '/assets/portfolio/sleepU_comic_4.webp',
-  //           alt: 'sleepU Comic 4',
-  //           weight: 4,
-  //           midWeight: 6,
-  //         },
-  //         {
-  //           src: '/assets/portfolio/sleepU_comic_5.webp',
-  //           alt: 'sleepU Comic 5',
-  //           weight: 4,
-  //           midWeight: 6,
-  //         },
-  //         {
-  //           src: '/assets/portfolio/sleepU_comic_6.webp',
-  //           alt: 'sleepU Comic 6',
-  //           weight: 4,
-  //           midWeight: 6,
-  //         },
-  //       ],
-  //     },
-  //     { type: 'text columns',
-  //       data: [
-  //         {
-  //           title: 'Interface Design',
-  //           body: `A simple interface design for the home page, which will display the recommendations for the day`,
-  //         },
-  //       ]
-  //     },
-  //     { type: 'image row',
-  //       data: [
-  //         {
-  //           src: '/assets/portfolio/sleepU_mobile_1.webp',
-  //           alt: 'sleepU Mobile Slide 1',
-  //           weight: 3,
-  //         },
-  //         {
-  //           src: '/assets/portfolio/sleepU_mobile_2.webp',
-  //           alt: 'sleepU Mobile Slide 2',
-  //           weight: 3,
-  //         },{
-  //           src: '/assets/portfolio/sleepU_mobile_3.webp',
-  //           alt: 'sleepU Mobile Slide 3',
-  //           weight: 3,
-  //         },{
-  //           src: '/assets/portfolio/sleepU_mobile_4.webp',
-  //           alt: 'sleepU Mobile Slide 4',
-  //           weight: 3,
-  //         },
-  //       ],
-  //     },
-  //     { type: 'title',
-  //       data: 'Design Conference'
-  //     },
-  //     { type: 'body',
-  //       data: `In August 2019, we submitted our project to the [Health x Design](https://centerhxd.com/collaborations/projects/health-x-design-building-health-into-everyday-life/): *Building Health into Everyday Life* Design Challenge. For the submission, I created a 3 minute video describing our project, from the importance of our work and the functionality of SleepU.`
-  //     },
-  //     { type: 'video',
-  //       data: {
-  //         src: 'https://www.youtube.com/embed/YVGc2D4oShU',
-  //         title: 'Sleep U Demo',
-  //         allowFullScreen: true,
-  //       }
-  //     },
-  //     { type: 'padding'
-  //     },
-  //   ]
-  // },
+  { name: 'Auto Refi',
+    description: 'Increase conversion rate through transparency',
+    jobs: ['Senior UX Designer'],
+    // TODO: add correct image assets
+    tileImage: {
+      uri: '/assets/portfolio/auto_refi.webp',
+      alt: 'Capital One Auto Refinance Blog Tile',
+    },
+    heroImage: {
+      uri: '/assets/portfolio/tbd',
+      alt: 'Capital One Auto Refinance Cover',
+    },
+    pathname: '/portfolio/auto_refi',
+    isPasswordProtected: true,
+
+    // TODO: add blog details
+    blog: [
+      { type: 'title',
+        data: 'Overview'
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'Lab & Duration',
+            body: `[Smart Sensing for Humans Lab](http://smashlab.io/), Feb 2019 - May 2020`,
+            weight: 3,
+          },
+          {
+            title: 'Team',
+            body: `Julian Ramos *PhD Candidate*, Carolyn Zhong *Designer*`,
+            weight: 3,
+          },
+          {
+            title: 'Primary Role',
+            body: `Research Participant Recruiter: *screened and onboarded participants*
+            User Researcher: *conducted research studies and synthesis activities*
+            Video Editor: *created a project overview video for a design conference*`,
+            weight: 6,
+          },
+        ]
+      },
+      { type: 'title',
+        data: 'Challenge'
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'How might we utilize data to help people improve their daily habits, sleep habits, and sleep quality?',
+            body: `Although sleep is essential for a person's health and wellbeing, research conducted by the NSF has shown that tens of millions of people are sleep deprived. Over the years, the number of sleep-tracking products have grown, but none of them help people understand how to improve their sleep. There is a need for a tool that goes beyond the generic tip of "minimize caffine intake" and "reduce blue light before bed", and help each individual understand what specific habits benefit their sleep.`,
+          },
+        ]
+      },
+      { type: 'title',
+        data: 'The Project'
+      },
+      { type: 'body',
+        data: `SleepU is a sleep-intervention app that uses Fitbit data and user-inputed trackings to provide personal sleep recommendations. These help users adjust their daily behaviors and sleep environment to optimize their sleep quality.`
+      },
+      { type: 'body',
+        data: `It accomplishes this with four features:`
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'Habit Tracker',
+            body: `A daily record of major factors of sleep (e.g. meal times, exercise, stress levels) to determine which combination of habits result in the best sleep for the individual`,
+            weight: 3,
+          },
+          {
+            title: 'Sleep Decision Making Tool',
+            body: `A machine learning model that predicts how an evening activity will affect an individuals sleep, and allows them to make informed decisions`,
+            weight: 3,
+          },
+          {
+            title: 'Interruptibility',
+            body: `An algorithm that determines how receptive one is to receive a notification based on phone usage (e.g. checking another notficiation, extensive use of social app)`,
+            weight: 3,
+          },
+          {
+            title: 'Contextual Reminders',
+            body: `A notification that gives a recommendation based on the time and location of the individual (e.g. if at a coffee shop past 3 pm, will remind them to buy decaf)`,
+            weight: 3,
+          },
+        ]
+      },
+      { type: 'title',
+        data: 'Approach'
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'Beta Testing',
+            body: `28 college students participated in a semester long study. In the first 2 weeks, they only used a Fitbit to record their sleep data. Afterwards, they were assigned to either visit a health specialist who provided them with a sleep assessment and consulation, or used SleepU. After a month of the first condition, participants were assigned to the other conditions for another month.\n* Everyday, participants filled out a "Sleep Diary" where they logged habits that contribute to sleep\n* Before and after each phase (4 times total), participants filled out a questionnaire that acccessed their sleep practices and other habits`,
+            weight: 6,
+          },
+          {
+            title: 'Semi-structured Interview',
+            body: `Interviewed half the participants from prior study and asked about their sleep during the semester.\n* Compared their sleep to other semesters, identified external factors beyond the study (e.g. class workload)\n* Discussed what factors they think affect their sleep, and any changes they made in their habit\n* Compared the two conditions: sleep appointment and using SleepU\n* Recounted their experience with SleepU; which recommendations they were following, and which weren't useful/ relevant`,
+            weight: 6,
+          },
+          {
+            title: 'Affinity Diagram',
+            body: `Transcribed 13 interviews and grouped similar quotes to find common themes. We found:\n* Overall, using SleepU was as effective, or better than visiting a health specialist\n* Participants found the recommendations and habit tracking to be helpful; they became more conscious of factors that affect their sleep (e.g. many established a bedtime routine)\n* Many expressed that recommendations got repetivitive after a while. This was because after the model determined which habits work best for the individual, it would recommend the same ones to ensure that they were being followed. There is a need for people to mark which habits they reguarly practice without the help of the app, so that SleepU can recommend new ones.\n* Participants also shared that they wanted to learn more about sleep in general, and why specific recommendations improve sleep`,
+          }
+        ]
+      },
+      { type: 'image',
+        data: {
+          src: '/assets/portfolio/sleepU_storyboard.webp',
+          alt: 'sleepU Storyboard',
+        }
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'Storyboard',
+            body: `Brainstormed ways we can improve SleepU based on user needs identified and specific feedback we received from participants during the interview. Ideas centered around two types of interactions:\n* App to person (storyboards 2, 3, 4): Make recommendations more specific and actionable (e.g. contextual reminders through the use phone data, time, and location)\n* Person to app (storyboards 1, 5, 6): Visualize/ explain how actions affect sleep, help individuals make good decisions for their sleep (e.g. decision making tool, habit tracker)`,
+            weight: 4,
+            midWeight: 12,
+          },
+          {
+            title: 'Speed Dating',
+            body: `Interviewed 8 new individuals; learned if people could relate to scenarios and if there was an actual need for the solution. Key findings:\n* Storyboard 2: People know that it's important to have a consistent sleep schedule, but aren't always able to go to sleep when they want because they are finishing up work. In this case, a reminder from SleepU wouldn't be helpful\n* Storyboards 3 and 4 were liked better, since it's regarding something the individual has control over and preventing bad choices\n* Storyboard 5: Logging habits takes effort, and inputing data would depend on how motivated they are to improve their sleep\n* Storyboard 6: Depending on the importance of the morning plan, usage of decision tool would differ (e.g. if high stakes, would still stay in for mental preperation)`,
+            weight: 8,
+            midWeight: 12,
+          },
+        ]
+      },
+      { type: 'image row',
+        data: [
+          {
+            src: '/assets/portfolio/sleepU_comic_1.webp',
+            alt: 'sleepU Comic 1',
+            weight: 4,
+            midWeight: 6,
+          },
+          {
+            src: '/assets/portfolio/sleepU_comic_2.webp',
+            alt: 'sleepU Comic 2',
+            weight: 4,
+            midWeight: 6,
+          },
+          {
+            src: '/assets/portfolio/sleepU_comic_3.webp',
+            alt: 'sleepU Comic 3',
+            weight: 4,
+            midWeight: 6,
+          },
+          {
+            src: '/assets/portfolio/sleepU_comic_4.webp',
+            alt: 'sleepU Comic 4',
+            weight: 4,
+            midWeight: 6,
+          },
+          {
+            src: '/assets/portfolio/sleepU_comic_5.webp',
+            alt: 'sleepU Comic 5',
+            weight: 4,
+            midWeight: 6,
+          },
+          {
+            src: '/assets/portfolio/sleepU_comic_6.webp',
+            alt: 'sleepU Comic 6',
+            weight: 4,
+            midWeight: 6,
+          },
+        ],
+      },
+      { type: 'text columns',
+        data: [
+          {
+            title: 'Interface Design',
+            body: `A simple interface design for the home page, which will display the recommendations for the day`,
+          },
+        ]
+      },
+      { type: 'image row',
+        data: [
+          {
+            src: '/assets/portfolio/sleepU_mobile_1.webp',
+            alt: 'sleepU Mobile Slide 1',
+            weight: 3,
+          },
+          {
+            src: '/assets/portfolio/sleepU_mobile_2.webp',
+            alt: 'sleepU Mobile Slide 2',
+            weight: 3,
+          },{
+            src: '/assets/portfolio/sleepU_mobile_3.webp',
+            alt: 'sleepU Mobile Slide 3',
+            weight: 3,
+          },{
+            src: '/assets/portfolio/sleepU_mobile_4.webp',
+            alt: 'sleepU Mobile Slide 4',
+            weight: 3,
+          },
+        ],
+      },
+      { type: 'title',
+        data: 'Design Conference'
+      },
+      { type: 'body',
+        data: `In August 2019, we submitted our project to the [Health x Design](https://centerhxd.com/collaborations/projects/health-x-design-building-health-into-everyday-life/): *Building Health into Everyday Life* Design Challenge. For the submission, I created a 3 minute video describing our project, from the importance of our work and the functionality of SleepU.`
+      },
+      { type: 'video',
+        data: {
+          src: 'https://www.youtube.com/embed/YVGc2D4oShU',
+          title: 'Sleep U Demo',
+          allowFullScreen: true,
+        }
+      },
+      { type: 'padding'
+      },
+    ]
+  },
   // { name: 'E1',
   //   description: 'Standardize & optimize workflow',
   //   jobs: ['UX Designer'],
